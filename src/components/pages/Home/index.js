@@ -11,10 +11,13 @@ const Home = () => {
       <section className="section-product-home">
         <Container>
           <Row>
-            <Col lg={12} md={12} sm={12} xs={12}>
-              {/* <Link to="/">
-                <img src="../images/back-arrow.png" />
-              </Link> */}
+            <Col
+              lg={12}
+              md={12}
+              sm={12}
+              xs={12}
+              style={{ marginBottom: "20px" }}
+            >
               <div className="filter-bar">
                 <div className="input">
                   <img src="../images/search-icon.png" />

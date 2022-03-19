@@ -34,7 +34,7 @@ const Description = (props) => {
       </Container> */}
       <Container>
         <Row>
-          <Col lg={12} md={12} sm={12} xs={12}>
+          <Col lg={12} md={12} sm={12} xs={12} style={{ marginBottom: "40px" }}>
             <Link to="/">
               <img src="../images/back-arrow.png" />
             </Link>
