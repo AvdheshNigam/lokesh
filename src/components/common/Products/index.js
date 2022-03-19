@@ -11,14 +11,11 @@ const Products = ({ data }) => {
         return (
           <Col xxl={4} xl={4} lg={4} md={6} sm={12}>
             <ProductCard
+              id={item.id}
               key={key}
               templateName={item.templateName}
-              pageUrl={item.pageUrl}
-              labelName={item.labelName}
-              buttonText={item.buttonText}
               imageUrl={item.imageUrl}
-              alt={item.alt}
-              id={item.id}
+              alt={item.templateName}
               figma={item.figma}
             />
           </Col>

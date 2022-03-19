@@ -5,7 +5,7 @@ import "./ProductCard.scss";
 
 const ProductCard = ({ id, templateName, imageUrl, figma }) => {
   return (
-    <Card className="custom-card">
+    <Card className="custom-card" key={id}>
       <Link to={`template/${id}`}>
         <Card.Img variant="top" src={imageUrl} />
       </Link>

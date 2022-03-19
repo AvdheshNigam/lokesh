@@ -111,7 +111,7 @@ const productList = [
   },
   {
     id: "11",
-    templateName: "Cat in the dark",
+    templateName: "Lokesh",
     description:
       "Cat in the Dark introduces another talking cat, Azrael, a big black tomcat from Panama. He isn't even remotely nice, except that he apparently cares about his human, Greeley Urzey. Azrael wants to convince the lovely little tabby, Dulcie, to come over to the dark side. Dulcie is attracted and repulsed. Azrael is no Joe Grey.",
     imageUrl: "images/placeholder.jpg",
@@ -122,7 +122,7 @@ const productList = [
   },
   {
     id: "12",
-    templateName: "Cat in the dark",
+    templateName: "Item Name",
     description:
       "Cat in the Dark introduces another talking cat, Azrael, a big black tomcat from Panama. He isn't even remotely nice, except that he apparently cares about his human, Greeley Urzey. Azrael wants to convince the lovely little tabby, Dulcie, to come over to the dark side. Dulcie is attracted and repulsed. Azrael is no Joe Grey.",
     imageUrl: "images/placeholder.jpg",
