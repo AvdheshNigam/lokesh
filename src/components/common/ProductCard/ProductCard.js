@@ -13,7 +13,7 @@ const ProductCard = ({
 }) => {
   return (
     <div className="item" key={id}>
-      <Link to={`description/${pageUrl}`}>
+      <Link to={`description/${id}`}>
         <img className="img-fluid" src={imageUrl} title={alt} />
       </Link>
       <span className="sticker top-right">
