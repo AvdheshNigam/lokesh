@@ -1,22 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import "./ProductCard.scss";
 
-const ProductCard = ({ id, templateName, imageUrl, buttonText, alt }) => {
+const ProductCard = ({ id, templateName, imageUrl, figma }) => {
   return (
-    <div className="item" key={id}>
+    <Card className="custom-card">
       <Link to={`description/${id}`}>
-        <Image src={imageUrl} alt={alt} fluid />
+        <Card.Img variant="top" src={imageUrl} />
       </Link>
-
-      <div className="product-description">
-        <div className="rating"></div>
-        <div className="product-name">
-          <h2>{templateName}</h2>
-        </div>
-      </div>
-    </div>
+      <Card.Body className="customCardBody">
+        <Card.Title className="custom-card-title">{templateName}</Card.Title>
+        <Card.Text className="custom-card-text">
+          <img src={figma} />
+        </Card.Text>
+      </Card.Body>
+    </Card>
   );
 };
 

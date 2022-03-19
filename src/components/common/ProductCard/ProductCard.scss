@@ -1,121 +1,36 @@
-/*===============
-Owl CSS
-=============*/
-
-.item {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  background: #fff;
-  border-radius: 10px;
-  border: 1px solid #e3e3e3;
-
-  img {
-    transition: all 1s ease 0s;
-    border-radius: 10px;
-    // &:hover {
-    //   transform: scale(1.4);
-    // }
-  }
+.custom-card {
+  border: 0 solid transparent !important;
+  transition: all 0.2s ease-in-out;
   &:hover {
-    .product-description {
-      opacity: 1;
-      transition: all 1s ease 0s;
+    box-shadow: 0px 2px 4px rgba(63, 114, 175, 0.16);
+    .custom-card-text {
+      box-shadow: 0px 2px 4px rgba(63, 114, 175, 0.16);
+    }
+  }
+  .customCardBody {
+    position: relative;
+  }
+  .custom-card-title.h5 {
+    color: #112d4e;
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    font-style: normal !important;
+    letter-spacing: 0.02em !important;
+  }
+  .custom-card-text {
+    position: absolute;
+    bottom: 40px;
+    right: 20px;
+    padding: 5px 12px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 1;
+    transition: all 0.2s ease-in-out;
+    img {
+      width: 15px;
+      height: auto;
     }
   }
 }
-.product-description {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 10px 8px;
-  opacity: 1;
-  margin: 10px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-}
-.rating {
-  color: #ff9d34;
-}
-.product-name {
-  display: block;
-  h2 {
-    font-size: 13px;
-    color: #fff;
-    margin: 0 0 5px 0;
-  }
-  > a {
-    background: #fff none repeat scroll 0 0;
-    border-radius: 2px;
-    float: right;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 2px 5px;
-    line-height: 13px;
-  }
-}
-
-.sticker {
-  position: absolute;
-  top: 15px;
-  z-index: 20;
-  .label-left {
-    left: 10px;
-    transform: rotate(-45deg);
-  }
-  .label-right {
-    right: 10px;
-    transform: rotate(45deg);
-  }
-}
-.sticker.top-left {
-  display: block;
-  top: 0;
-  width: 66px;
-  left: 0;
-  &::before {
-    border-color: #157ed2 transparent transparent #157ed2;
-    left: 10px;
-    border-style: solid;
-    border-width: 33px;
-    content: "";
-    position: absolute;
-    top: 10px;
-  }
-}
-.sticker.top-right {
-  display: block;
-  top: 0px;
-  width: 66px;
-  right: 0px;
-  &::before {
-    border-color: #157ed2 #157ed2 transparent transparent;
-    right: 0;
-    border-style: solid;
-    border-width: 33px;
-    content: "";
-    position: absolute;
-    top: 0;
-  }
-}
-.label-right {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  position: absolute;
-  text-transform: uppercase;
-  top: 16px;
-}
-.label-left {
-  color: #fff;
-  font-size: 12px;
-  font-weight: bold;
-  line-height: 15px;
-  position: absolute;
-  text-transform: uppercase;
-  top: 16px;
-}
-/*==============================*/

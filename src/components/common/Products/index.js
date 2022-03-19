@@ -19,6 +19,7 @@ const Products = ({ data }) => {
               imageUrl={item.imageUrl}
               alt={item.alt}
               id={item.id}
+              figma={item.figma}
             />
           </Col>
         );

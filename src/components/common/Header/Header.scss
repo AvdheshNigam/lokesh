@@ -8,9 +8,12 @@
 }
 
 .custom-navbar .navbar-nav a {
-  font-size: 14px;
-  font-weight: 700;
-  color: #000 !important;
+  font-size: 16px;
+  font-weight: 500;
+  color: #112d4e !important;
+}
+.custom-navbar .navbar-nav a.active {
+  color: #3f72af !important;
 }
 
 @media (min-width: 992px) {
