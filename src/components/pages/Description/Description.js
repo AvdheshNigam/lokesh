@@ -39,12 +39,17 @@ const Description = (props) => {
               <img src="../images/back-arrow.png" />
             </Link>
           </Col>
-          <Col lg={5} md={5} sm={5} xs={12}>
+          <Col lg={6} md={6} sm={6} xs={12}>
             <div className="slider-images_big">
-              <Image src={`../../${imageUrl}`} rounded fluid />
+              <Image
+                src={`../../${imageUrl}`}
+                rounded
+                fluid
+                style={{ width: "100%" }}
+              />
             </div>
           </Col>
-          <Col lg={7} md={7} sm={7} xs={12}>
+          <Col lg={6} md={6} sm={6} xs={12}>
             <section className="section-product-description">
               <h1 className="latest-product-title">{templateName}</h1>
               <article>

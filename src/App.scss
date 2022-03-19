@@ -35,4 +35,13 @@ body {
     margin-top: var(--bs-gutter-y);
     margin-bottom: 64px;
   }
+  .getter .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x) * 2.2) !important;
+    padding-left: calc(var(--bs-gutter-x) * 2.2) !important;
+    margin-top: var(--bs-gutter-y);
+    margin-bottom: 64px;
+  }
 }
