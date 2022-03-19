@@ -21,7 +21,7 @@ const Home = () => {
               <div className="filter-bar">
                 <div className="input">
                   <img src="../images/search-icon.png" />
-                  <input type="text" />
+                  <input type="text" placeholder="Search" />
                 </div>
                 <ul>
                   <li>All</li>

@@ -9,7 +9,7 @@ import "./Description.scss";
 const Description = (props) => {
   let id = window.location.pathname.split("/")[2];
   console.log("url", id);
-  const { templateName, imageUrl, catogeries, image, description } =
+  const { templateName, imageUrl, catogeries, image, description, figma } =
     productList[id - 1];
 
   useEffect(() => {
@@ -34,31 +34,44 @@ const Description = (props) => {
       </Container> */}
       <Container>
         <Row>
-          <Col lg={12} md={12} sm={12} xs={12} style={{ marginBottom: "40px" }}>
-            <Link to="/">
-              <img src="../images/back-arrow.png" />
+          <Col
+            xxl={12}
+            xl={12}
+            lg={12}
+            md={12}
+            sm={12}
+            style={{ marginBottom: "40px" }}
+          >
+            <Link to="/" className="back">
+              <img src="../images/back-arrow.png" /> <span>back</span>
             </Link>
           </Col>
-          <Col lg={6} md={6} sm={6} xs={12}>
-            <div className="slider-images_big">
+          <Col xxl={7} xl={7} lg={7} md={12} sm={12}>
+            <div className="template-images">
               <Image
                 src={`../../${imageUrl}`}
                 rounded
                 fluid
                 style={{ width: "100%" }}
               />
+              <div className="template-images_right">
+                <Image src={`../../${figma}`} />
+                Figma
+              </div>
             </div>
           </Col>
-          <Col lg={6} md={6} sm={6} xs={12}>
+          <Col xxl={5} xl={5} lg={5} md={12} sm={12}>
             <section className="section-product-description">
-              <h1 className="latest-product-title">{templateName}</h1>
+              <h1>{templateName}</h1>
               <article>
                 <p>{description}</p>
-                <h4>
-                  You can download, use anywhere without giving credits. we are
-                  happy with it. :)
-                </h4>
-                <button>Get figma file</button>
+                <div className="custom-article-body">
+                  <h4>
+                    You can download, use anywhere without giving credits. we
+                    are happy with it. :)
+                  </h4>
+                  <button>Get figma file</button>
+                </div>
               </article>
             </section>
           </Col>
