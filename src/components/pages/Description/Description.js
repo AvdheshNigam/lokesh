@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
 import { Container, Row, Col, Table, Breadcrumb, Image } from "react-bootstrap";
 import productList from "../../../Data/data";
+import { Link } from "react-router-dom";
 import "./Description.scss";
 // import { useParams } from "react-router-dom";
 
@@ -16,25 +17,28 @@ const Description = (props) => {
   }, []);
 
   return (
-    <>
+    <section className="section-product-home">
       <Helmet>
         <title>{templateName}</title>
         <meta name="description" content={{ templateName }} />
         <meta name="keywords" content={{ templateName }} />
       </Helmet>
+      {/* <Container>
+        <Row>
+          <Col lg={12} md={12} sm={12} xs={12}>
+            <Link to="/">
+              <img src="../images/back-arrow.png" />
+            </Link>
+          </Col>
+        </Row>
+      </Container> */}
       <Container>
         <Row>
           <Col lg={12} md={12} sm={12} xs={12}>
-            <Breadcrumb style={{ marginTop: "20px" }}>
-              <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
-              <Breadcrumb.Item href="#">Revolving Light</Breadcrumb.Item>
-              <Breadcrumb.Item active>{templateName}</Breadcrumb.Item>
-            </Breadcrumb>
+            <Link to="/">
+              <img src="../images/back-arrow.png" />
+            </Link>
           </Col>
-        </Row>
-      </Container>
-      <Container>
-        <Row>
           <Col lg={5} md={5} sm={5} xs={12}>
             <div className="slider-images_big">
               <Image src={`../../${imageUrl}`} rounded fluid />
@@ -55,7 +59,7 @@ const Description = (props) => {
           </Col>
         </Row>
       </Container>
-    </>
+    </section>
   );
 };
 export default Description;
