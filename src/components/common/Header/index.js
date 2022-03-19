@@ -12,31 +12,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto">
-              <Nav.Link href="/">HOME</Nav.Link>
-              <Nav.Link href="/">PRODUCTS</Nav.Link>
-              <NavDropdown
-                title="REVOLVING LIGHTS"
-                id="navbarScrollingDropdown"
-              >
-                <NavDropdown.Item href="#action3">
-                  GM Revolving Light
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action4">
-                  Oval Revolving Light
-                </NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action5">
-                  Magnet Revolving Light
-                </NavDropdown.Item>
-                <NavDropdown.Item href="#action5">
-                  Emergency Bar Light - Ambulance
-                </NavDropdown.Item>
-              </NavDropdown>
-              <Nav.Link href="/siren">SIREN</Nav.Link>
-              <Nav.Link href="/">BAR LIGHTS</Nav.Link>
-              <Nav.Link href="/led">CAR ACCESSORIES</Nav.Link>
-              <Nav.Link href="/led">EMERGENCY LIGHTS</Nav.Link>
-              <Nav.Link href="/led">CONTACT</Nav.Link>
+              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/">About</Nav.Link>
+              <Nav.Link href="/">Contact</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
