@@ -1,33 +1,11 @@
 /*===============
 Owl CSS
 =============*/
-.slick-list .slick-track .slick-slide > div {
-  margin-right: 15px;
-}
-.slick-list .slick-track .slick-slide:first-child > div {
-  margin-right: 15px;
-}
-.slick-list .slick-track .slick-slide:last-child > div {
-  margin-right: 0px;
-}
-.latest-product-title {
-  display: block;
-  margin-bottom: 15px;
-  text-align: left;
-  border-bottom: 1px solid #f5f5f5;
-  h1 {
-    margin: 0 0 10px 0;
-    font-size: 20px;
-  }
-}
-.latest-product-title.padding {
-  padding-top: 25px;
-}
 
 .item {
   position: relative;
   overflow: hidden;
-  padding: 10px;
+  padding: 0;
   background: #fff;
   border-radius: 10px;
   border: 1px solid #e3e3e3;
@@ -35,9 +13,9 @@ Owl CSS
   img {
     transition: all 1s ease 0s;
     border-radius: 10px;
-    &:hover {
-      transform: scale(1.4);
-    }
+    // &:hover {
+    //   transform: scale(1.4);
+    // }
   }
   &:hover {
     .product-description {

@@ -8,7 +8,9 @@ const Header = () => {
       <Navbar expand="lg" className="custom-navbar">
         {/* <Navbar bg="light" variant="light" expand="lg" className="custom-navbar"> */}
         <Container fluid>
-          <Navbar.Brand href="/">Kumar</Navbar.Brand>
+          <Navbar.Brand href="/">
+            <img src="/images/logo.svg" />
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav className="ms-auto">
