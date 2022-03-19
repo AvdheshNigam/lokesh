@@ -1,0 +1,143 @@
+/*===============
+Owl CSS
+=============*/
+.slick-list .slick-track .slick-slide > div {
+  margin-right: 15px;
+}
+.slick-list .slick-track .slick-slide:first-child > div {
+  margin-right: 15px;
+}
+.slick-list .slick-track .slick-slide:last-child > div {
+  margin-right: 0px;
+}
+.latest-product-title {
+  display: block;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f5f5f5;
+  h1 {
+    margin: 0 0 10px 0;
+    font-size: 20px;
+  }
+}
+.latest-product-title.padding {
+  padding-top: 25px;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+
+  img {
+    transition: all 1s ease 0s;
+    border-radius: 10px;
+    &:hover {
+      transform: scale(1.4);
+    }
+  }
+  &:hover {
+    .product-description {
+      opacity: 1;
+      transition: all 1s ease 0s;
+    }
+  }
+}
+.product-description {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 8px;
+  opacity: 1;
+  margin: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.rating {
+  color: #ff9d34;
+}
+.product-name {
+  display: block;
+  h2 {
+    font-size: 13px;
+    color: #fff;
+    margin: 0 0 5px 0;
+  }
+  > a {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 2px;
+    float: right;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 2px 5px;
+    line-height: 13px;
+  }
+}
+
+.sticker {
+  position: absolute;
+  top: 15px;
+  z-index: 20;
+  .label-left {
+    left: 10px;
+    transform: rotate(-45deg);
+  }
+  .label-right {
+    right: 10px;
+    transform: rotate(45deg);
+  }
+}
+.sticker.top-left {
+  display: block;
+  top: 0;
+  width: 66px;
+  left: 0;
+  &::before {
+    border-color: #157ed2 transparent transparent #157ed2;
+    left: 10px;
+    border-style: solid;
+    border-width: 33px;
+    content: "";
+    position: absolute;
+    top: 10px;
+  }
+}
+.sticker.top-right {
+  display: block;
+  top: 0px;
+  width: 66px;
+  right: 0px;
+  &::before {
+    border-color: #157ed2 #157ed2 transparent transparent;
+    right: 0;
+    border-style: solid;
+    border-width: 33px;
+    content: "";
+    position: absolute;
+    top: 0;
+  }
+}
+.label-right {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+}
+.label-left {
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 15px;
+  position: absolute;
+  text-transform: uppercase;
+  top: 16px;
+}
+/*==============================*/
