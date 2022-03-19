@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import Products from "../../common/Products";
 import productList from "../../../Data/data";
+import "./Index.scss";
 
 const Home = () => {
   return (
@@ -14,7 +15,17 @@ const Home = () => {
               {/* <Link to="/">
                 <img src="../images/back-arrow.png" />
               </Link> */}
-              
+              <div className="filter-bar">
+                <div className="input">
+                  <img src="../images/search-icon.png" />
+                  <input type="text" />
+                </div>
+                <ul>
+                  <li>All</li>
+                  <li>Illustrations</li>
+                  <li>UI designs</li>
+                </ul>
+              </div>
             </Col>
             <Products
               data={productList.filter(

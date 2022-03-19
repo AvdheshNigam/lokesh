@@ -1,0 +1,42 @@
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      &:last-child {
+        padding-right: 0px;
+      }
+    }
+  }
+}
+.input {
+  position: relative;
+  img {
+    position: absolute;
+    left: 0px;
+    top: 6px;
+  }
+  input {
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid red;
+    background: transparent;
+    padding: 3px 3px 3px 30px;
+    &:focus {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
+    &:focus-visible {
+      outline: none;
+    }
+  }
+}
