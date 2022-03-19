@@ -6,17 +6,17 @@ import productList from "../../../Data/data";
 const Home = () => {
   return (
     <>
-      <Container>
-        <Row>
-          <Col lg={12} md={12} sm={12} xs={12}>
-            <section className="section-product-home">
-              <Products
-                data={productList.filter((item) => item.catogeries === "LED")}
-              />
-            </section>
-          </Col>
-        </Row>
-      </Container>
+      <section className="section-product-home">
+        <Container>
+          <Row>
+            <Products
+              data={productList.filter(
+                (item) => item.catogeries === "UI designs"
+              )}
+            />
+          </Row>
+        </Container>
+      </section>
     </>
   );
 };

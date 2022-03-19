@@ -1,30 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import "./ProductCard.scss";
 
-const ProductCard = ({
-  id,
-  productName,
-  pageUrl,
-  imageUrl,
-  alt,
-  labelName,
-  buttonText,
-}) => {
+const ProductCard = ({ id, templateName, imageUrl, buttonText, alt }) => {
   return (
     <div className="item" key={id}>
       <Link to={`description/${id}`}>
-        <img className="img-fluid" src={imageUrl} title={alt} />
+        <Image src={imageUrl} alt={alt} fluid />
       </Link>
-      <span className="sticker top-right">
-        <span className="label-right">{labelName}</span>
-      </span>
 
       <div className="product-description">
         <div className="rating"></div>
         <div className="product-name">
-          <h2>{productName}</h2>
-          <a href={buttonText}>Show Product</a>
+          <h2>{templateName}</h2>
         </div>
       </div>
     </div>
