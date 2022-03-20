@@ -1,6 +1,8 @@
 .custom-footer-parent {
   display: block;
-  padding: 0px 15px;
+  @media (min-width: 576px) {
+    padding: 0px 64px;
+  }
   background: #fff;
   // height: 30px;
 }
