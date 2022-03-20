@@ -8,7 +8,7 @@ const Products = ({ data }) => {
     <>
       {data.map((item, key) => {
         return (
-          <Col xxl={4} xl={4} lg={4} md={6} sm={12}>
+          <Col xxl={4} xl={4} lg={4} md={6} sm={12} key={key}>
             <ProductCard
               id={item.id}
               key={key}

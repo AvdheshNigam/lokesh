@@ -15,8 +15,9 @@ const Home = () => {
 
   let rowsDisplay = 3;
   let dataCount = data.length;
+
   const pageData = useMemo(() => {
-    return productList.slice(0, page + rowsDisplay);
+    return productList.slice(0, 3);
   }, [page]);
 
   const loadMore = (e) => {
@@ -32,7 +33,7 @@ const Home = () => {
 
   console.log(searchTemplate);
 
-  const clickHandler = (cart) => {
+  const filterHandler = (cart) => {
     console.log("click handler...");
     const result = productList.filter((curData) => {
       return curData.catogeries === cart;
@@ -81,30 +82,32 @@ const Home = () => {
                 </div>
                 <ul>
                   <li onClick={() => setData(productList)}>All</li>
-                  <li onClick={() => clickHandler("Illustrations")}>
+                  <li onClick={() => filterHandler("Illustrations")}>
                     Illustrations
                   </li>
-                  <li onClick={() => clickHandler("UI designs")}>UI designs</li>
+                  <li onClick={() => filterHandler("UI designs")}>
+                    UI designs
+                  </li>
                 </ul>
               </div>
             </Col>
-
-            <Products
-              data={data
-                .filter((template) => {
-                  if (searchTemplate == "") {
-                    return template;
-                  } else if (
-                    template.templateName
-                      .toLowerCase()
-                      .includes(searchTemplate.toLowerCase())
-                  ) {
-                    return template;
-                  }
-                })
-                .map((item) => item)}
-            />
-
+            {productList && (
+              <Products
+                data={data
+                  .filter((template) => {
+                    if (searchTemplate == "") {
+                      return template;
+                    } else if (
+                      template.templateName
+                        .toLowerCase()
+                        .includes(searchTemplate.toLowerCase())
+                    ) {
+                      return template;
+                    }
+                  })
+                  .map((item) => item)}
+              />
+            )}
             {/* {productList && (
               <Products
                 data={pageData
@@ -122,7 +125,8 @@ const Home = () => {
                   .map((item) => item)}
               />
             )} */}
-
+          </Row>
+          <Row>
             <Col lg={{ span: 4, offset: 4 }}>
               {page !== dataCount ? (
                 <Button className="load-data" onClick={loadMore}>
