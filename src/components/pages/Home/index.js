@@ -34,7 +34,6 @@ const Home = () => {
   console.log(searchTemplate);
 
   const filterHandler = (cart) => {
-    console.log("click handler...");
     const result = productList.filter((curData) => {
       return curData.catogeries === cart;
     });
@@ -85,8 +84,8 @@ const Home = () => {
                   <li onClick={() => filterHandler("Illustrations")}>
                     Illustrations
                   </li>
-                  <li onClick={() => filterHandler("UI designs")}>
-                    UI designs
+                  <li onClick={() => filterHandler("UI Designs")}>
+                    UI Designs
                   </li>
                 </ul>
               </div>
@@ -126,7 +125,7 @@ const Home = () => {
               />
             )} */}
           </Row>
-          <Row>
+          {/* <Row>
             <Col lg={{ span: 4, offset: 4 }}>
               {page !== dataCount ? (
                 <Button className="load-data" onClick={loadMore}>
@@ -134,7 +133,7 @@ const Home = () => {
                 </Button>
               ) : null}
             </Col>
-          </Row>
+          </Row> */}
           <div
             className="go-to-top"
             onClick={scrollToTop}

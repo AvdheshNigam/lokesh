@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section className="custom-footer-parent">
       <div className="custom-footer">
-        <p>
+        <p xs={{ order: "last" }}>
           &copy; Copyright, 2022, <Link to="/">urluckyturtle</Link>
         </p>
         <Link to="/">
