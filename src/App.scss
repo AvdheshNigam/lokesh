@@ -17,30 +17,22 @@ body {
 
 @media (min-width: 1200px) {
   .row > * {
-    // flex-shrink: 0;
-    // width: 100%;
-    // max-width: 100%;
-    // margin-top: var(--bs-gutter-y);
     padding-right: calc(var(--bs-gutter-x) * 2.2) !important;
     padding-left: calc(var(--bs-gutter-x) * 2.2) !important;
     margin-bottom: 64px;
   }
   .getter .row > * {
-    // flex-shrink: 0;
-    // width: 100%;
-    // max-width: 100%;
-    // margin-top: var(--bs-gutter-y);
     padding-right: calc(var(--bs-gutter-x) * 2.2) !important;
     padding-left: calc(var(--bs-gutter-x) * 2.2) !important;
     margin-bottom: 64px;
   }
 }
 
-@media (max-width: 556px) {
+@media (max-width: 992px) {
   .row > * {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
   .getter .row > * {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 }
