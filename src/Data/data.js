@@ -1,7 +1,7 @@
 const productList = [
   {
     id: "1",
-    templateName: "Cat in the dark",
+    templateName: "ABC",
     description:
       "Cat in the Dark introduces another talking cat, Azrael, a big black tomcat from Panama. He isn't even remotely nice, except that he apparently cares about his human, Greeley Urzey. Azrael wants to convince the lovely little tabby, Dulcie, to come over to the dark side. Dulcie is attracted and repulsed. Azrael is no Joe Grey.",
     imageUrl: "images/item-01.jpg",
@@ -16,7 +16,7 @@ const productList = [
     description:
       "Cat in the Dark introduces another talking cat, Azrael, a big black tomcat from Panama. He isn't even remotely nice, except that he apparently cares about his human, Greeley Urzey. Azrael wants to convince the lovely little tabby, Dulcie, to come over to the dark side. Dulcie is attracted and repulsed. Azrael is no Joe Grey.",
     imageUrl: "images/item-02.jpg",
-    catogeries: "UI designs",
+    catogeries: "Illustrations",
     tags: ["Illustrations", "UI designs"],
     downloadLink: "https://www.google.com",
     figma: "images/figma.png",

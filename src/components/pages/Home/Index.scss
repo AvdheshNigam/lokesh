@@ -55,3 +55,15 @@
 ::placeholder {
   color: rgba(63, 114, 175, 0.54);
 }
+
+.load-more {
+  
+  border: 2px dashed #3f72af;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #3f72af;
+}
