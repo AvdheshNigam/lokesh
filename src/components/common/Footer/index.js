@@ -11,7 +11,7 @@ const Footer = () => {
           &copy; Copyright, 2022, <Link to="/">urluckyturtle</Link>
         </p>
         <Link to="/">
-          <img src="images/logo.svg" />
+          <img src="images/logo.svg" alt="urluckyturtle" />
         </Link>
         <ul>
           <li>

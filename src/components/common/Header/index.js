@@ -9,7 +9,7 @@ const Header = () => {
         {/* <Navbar bg="light" variant="light" expand="lg" className="custom-navbar"> */}
         <Container fluid>
           <Navbar.Brand href="/">
-            <img src="/images/logo.svg" />
+            <img src="/images/logo.svg" alt="urluckyturtle" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
