@@ -44,6 +44,11 @@
       width: 100%;
       font-style: normal;
       padding: 16px 12px;
+      border: 0;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        background: #112d4e;
+      }
     }
   }
 }

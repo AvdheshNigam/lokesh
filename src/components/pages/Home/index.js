@@ -126,7 +126,7 @@ const Home = () => {
               />
             )} */}
           </Row>
-          {/* <Row>
+          <Row>
             <Col lg={{ span: 4, offset: 4 }}>
               {page !== dataCount ? (
                 <Button className="load-data" onClick={loadMore}>
@@ -134,7 +134,7 @@ const Home = () => {
                 </Button>
               ) : null}
             </Col>
-          </Row> */}
+          </Row>
           <div
             className="go-to-top"
             onClick={scrollToTop}

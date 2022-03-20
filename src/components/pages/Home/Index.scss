@@ -37,7 +37,8 @@
     border-bottom: 1px solid #3f72af;
     background: transparent;
     padding: 3px 3px 3px 30px;
-    color: rgba(63, 114, 175, 0.54);
+    transition: all 0.2s ease-in-out;
+    color: #112d4e;
     @media (max-width: 992px) {
       width: 100%;
       margin-bottom: 30px;
@@ -47,6 +48,7 @@
       border-top: 0;
       border-left: 0;
       border-right: 0;
+      border-bottom: 1px solid #112d4e;
     }
     &:focus-visible {
       outline: none;
@@ -81,6 +83,9 @@
   background: transparent !important;
   padding: 15px 12px !important;
   margin-top: 30px;
+  &:hover {
+    color: #112d4e !important;
+  }
   &:focus {
     box-shadow: none !important;
     outline: none !important;
@@ -111,4 +116,11 @@
   padding: 5px 10px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  &:hover {
+    background: #3f72af;
+    box-shadow: 0px 2px 4px rgba(63, 114, 175, 0.16);
+    img {
+      filter: brightness(0.5);
+    }
+  }
 }
