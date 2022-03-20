@@ -1,19 +1,20 @@
 import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import Products from "../../common/Products";
 import productList from "../../../Data/data";
 import "./Index.scss";
 
 const Home = () => {
+  const [data, setData] = useState(productList);
+
   const [page, setPage] = useState(0);
   const [searchTemplate, setSearchTemplate] = useState("");
-  const [design, setDesgin] = useState("UI Design");
   const [isLoading, setLoading] = useState(false);
   const [visible, setVisible] = useState(false);
 
   let rowsDisplay = 3;
-  let userCount = productList.length;
+  let dataCount = data.length;
   const pageData = useMemo(() => {
     return productList.slice(0, page + rowsDisplay);
   }, [page]);
@@ -29,11 +30,14 @@ const Home = () => {
     console.log(page);
   };
 
-  console.log("ffff", design);
-
   console.log(searchTemplate);
-  const clickhandler = () => {
+
+  const clickHandler = (cart) => {
     console.log("click handler...");
+    const result = productList.filter((curData) => {
+      return curData.catogeries === cart;
+    });
+    setData(result);
   };
 
   const toggleVisible = () => {
@@ -76,20 +80,32 @@ const Home = () => {
                   />
                 </div>
                 <ul>
-                  <li onClick={clickhandler}>All</li>
-                  <li onClick={clickhandler}>Illustrations</li>
-                  <li onClick={clickhandler}> UI designs</li>
+                  <li onClick={() => setData(productList)}>All</li>
+                  <li onClick={() => clickHandler("Illustrations")}>
+                    Illustrations
+                  </li>
+                  <li onClick={() => clickHandler("UI designs")}>UI designs</li>
                 </ul>
               </div>
             </Col>
 
-            {/* <Products
-              data={productList.filter(
-                (item) => item.catogeries === "Illustrations"
-              )}
-            /> */}
+            <Products
+              data={data
+                .filter((template) => {
+                  if (searchTemplate == "") {
+                    return template;
+                  } else if (
+                    template.templateName
+                      .toLowerCase()
+                      .includes(searchTemplate.toLowerCase())
+                  ) {
+                    return template;
+                  }
+                })
+                .map((item) => item)}
+            />
 
-            {productList && (
+            {/* {productList && (
               <Products
                 data={pageData
                   .filter((template) => {
@@ -105,10 +121,10 @@ const Home = () => {
                   })
                   .map((item) => item)}
               />
-            )}
+            )} */}
 
             <Col lg={{ span: 4, offset: 4 }}>
-              {page !== userCount ? (
+              {page !== dataCount ? (
                 <Button className="load-data" onClick={loadMore}>
                   Load more
                 </Button>

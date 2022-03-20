@@ -23,15 +23,6 @@ const Description = (props) => {
         <meta name="description" content={{ templateName }} />
         <meta name="keywords" content={{ templateName }} />
       </Helmet>
-      {/* <Container>
-        <Row>
-          <Col lg={12} md={12} sm={12} xs={12}>
-            <Link to="/">
-              <img src="../images/back-arrow.png" />
-            </Link>
-          </Col>
-        </Row>
-      </Container> */}
       <Container>
         <Row>
           <Col

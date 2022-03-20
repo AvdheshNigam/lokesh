@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Slider from "react-slick";
-// import { default as productList } from "../../../Data/data";
 import ProductCard from "../ProductCard/ProductCard";
 
 const Products = ({ data }) => {
