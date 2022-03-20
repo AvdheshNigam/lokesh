@@ -31,7 +31,7 @@ const Description = (props) => {
             lg={12}
             md={12}
             sm={12}
-            style={{ marginBottom: "40px" }}
+            style={{ marginBottom: "25px" }}
           >
             <Link to="/" className="back">
               <img src="../images/back-arrow.png" /> <span>back</span>
