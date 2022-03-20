@@ -14,8 +14,13 @@
       list-style: none;
       padding: 10px 15px;
       cursor: pointer;
+      font-weight: 300;
       &:last-child {
         padding-right: 0px;
+      }
+      &.active {
+        font-weight: 400;
+        color: #3f72af;
       }
     }
   }

@@ -81,7 +81,9 @@ const Home = () => {
                   />
                 </div>
                 <ul>
-                  <li onClick={() => setData(productList)}>All</li>
+                  <li className="active" onClick={() => setData(productList)}>
+                    All
+                  </li>
                   <li onClick={() => filterHandler("Illustrations")}>
                     Illustrations
                   </li>
