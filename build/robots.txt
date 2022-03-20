@@ -1,5 +1,0 @@
-
-User-agent: *
-Allow: /
-
-Sitemap: http://kumarautoindustries.com/sitemap.xml
