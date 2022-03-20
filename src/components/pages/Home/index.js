@@ -9,15 +9,23 @@ const Home = () => {
   const [page, setPage] = useState(0);
   const [searchTemplate, setSearchTemplate] = useState("");
   const [design, setDesgin] = useState("UI Design");
+  const [isLoading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
 
   let rowsDisplay = 3;
-
+  let userCount = productList.length;
   const pageData = useMemo(() => {
     return productList.slice(0, page + rowsDisplay);
   }, [page]);
 
-  const loadMore = () => {
-    setPage((prev) => prev + 3);
+  const loadMore = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    // setTimeout(() => {
+    //   setPage((prev) => prev + rowsDisplay);
+    // }, 5000);
+    setPage((prev) => prev + rowsDisplay);
+    setLoading(false);
     console.log(page);
   };
 
@@ -27,6 +35,25 @@ const Home = () => {
   const clickhandler = () => {
     console.log("click handler...");
   };
+
+  const toggleVisible = () => {
+    const scrolled = document.documentElement.scrollTop;
+    if (scrolled > 300) {
+      setVisible(true);
+    } else if (scrolled <= 300) {
+      setVisible(false);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
+  window.addEventListener("scroll", toggleVisible);
+
   return (
     <>
       <section className="section-product-home">
@@ -79,12 +106,25 @@ const Home = () => {
                   .map((item) => item)}
               />
             )}
-            <Col lg={12}>
-              <Button className="load-data" onClick={loadMore}>
-                Load more
-              </Button>
+
+            <Col lg={{ span: 4, offset: 4 }}>
+              {page !== userCount ? (
+                <Button className="load-data" onClick={loadMore}>
+                  Load more
+                </Button>
+              ) : null}
             </Col>
           </Row>
+          <div
+            className="go-to-top"
+            onClick={scrollToTop}
+            style={{ display: visible ? "inline" : "none" }}
+          >
+            <img
+              src="images/back-arrow.png"
+              style={{ transform: "rotate(90deg)" }}
+            />
+          </div>
         </Container>
       </section>
     </>
