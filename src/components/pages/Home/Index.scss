@@ -137,7 +137,7 @@
     background: #3f72af;
     box-shadow: 0px 2px 4px rgba(63, 114, 175, 0.16);
     img {
-      filter: brightness(0.5);
+      filter: brightness(0) invert(1);
     }
   }
 }
