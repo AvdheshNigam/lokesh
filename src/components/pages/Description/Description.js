@@ -7,7 +7,6 @@ import "./Description.scss";
 
 const Description = (props) => {
   let id = window.location.pathname.split("/")[2];
-  console.log("url", id);
   const { templateName, imageUrl, description, figma } = productList[id - 1];
 
   useEffect(() => {
