@@ -15,7 +15,7 @@ const Home = () => {
 
   let dataCount = data.length;
   let slice = data.slice(0, element);
-  console.log("slice", element, dataCount);
+  console.log("slice", element);
   const loadMore = (e) => {
     e.preventDefault();
     setLoading(true);
