@@ -36,12 +36,7 @@ const Description = (props) => {
           </Col>
           <Col xxl={7} xl={7} lg={7} md={12} sm={12}>
             <div className="template-images">
-              <Image
-                src={`../../${imageUrl}`}
-                rounded
-                fluid
-                style={{ width: "100%" }}
-              />
+              <Image src={`../../${imageUrl}`} rounded fluid />
               <div className="template-images_right">
                 <Image src={`../../${figma}`} />
                 Figma

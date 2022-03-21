@@ -10,7 +10,8 @@
     margin-left: -106px;
   }
   margin-top: 10px;
-  height: calc(100% - 25px);
+  min-height: 496px;
+  // max-height: calc(100% - 150px);
 
   h1 {
     font-size: 24px;
@@ -75,6 +76,16 @@ article p {
 
 .template-images {
   position: relative;
+  img {
+    height: 100%;
+    width: 100%;
+    height: auto;
+    @media (min-width: 1200px) {
+      width: 100%;
+      height: 520px;
+    }
+  }
+
   &_right {
     position: absolute;
     background: rgba(255, 255, 255, 0.87);
