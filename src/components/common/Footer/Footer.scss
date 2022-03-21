@@ -4,7 +4,6 @@
     padding: 0px 64px;
   }
   background: #fff;
-  // height: 30px;
 }
 .custom-footer {
   display: flex;
@@ -20,6 +19,7 @@
     a {
       color: #3f72af;
       text-decoration: none;
+      margin-left: 15px;
     }
     @media (max-width: 992px) {
       order: 3;
@@ -40,7 +40,7 @@
     li {
       display: flex;
       list-style: none;
-      gap: 10px;
+      gap: 24px;
       a {
         display: block;
         font-size: 16px;

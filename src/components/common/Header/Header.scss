@@ -22,8 +22,16 @@
 }
 
 @media (min-width: 992px) {
-  .navbar-expand-lg .navbar-nav .dropdown-menu {
+  .custom-navbar .navbar-expand-lg .navbar-nav .dropdown-menu {
     position: absolute;
     top: 62px !important;
   }
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+  }
+}
+
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: none !important;
 }
