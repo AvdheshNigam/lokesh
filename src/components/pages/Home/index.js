@@ -71,7 +71,7 @@ const Home = () => {
                   <input
                     type="text"
                     placeholder="Search"
-                    onChange={(event) => setSearchTemplate(event.target.value)}
+                    onChange={(e) => setSearchTemplate(e.target.value)}
                   />
                 </div>
                 <ul>
