@@ -26,9 +26,9 @@ const Home = () => {
     }, 100);
   };
 
-  const filterHandler = (cart) => {
+  const filterHandler = (category) => {
     const result = productList.filter((curData) => {
-      return curData.catogeries === cart;
+      return curData.catogeries === category;
     });
     setData(result);
   };
