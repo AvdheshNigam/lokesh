@@ -15,11 +15,23 @@
       padding: 10px 15px;
       cursor: pointer;
       font-weight: 300;
+      transition: all 0.2s ease-in-out;
       &:last-child {
         padding-right: 0px;
       }
       &.active {
         font-weight: 400;
+        color: #3f72af;
+      }
+      &:active:focus {
+        font-weight: 400;
+        color: #3f72af;
+      }
+      &:focus {
+        font-weight: 400;
+        color: #3f72af;
+      }
+      &:hover {
         color: #3f72af;
       }
     }
