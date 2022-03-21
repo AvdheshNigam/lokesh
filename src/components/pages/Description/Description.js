@@ -46,7 +46,7 @@ const Description = (props) => {
               />
               <div className="template-images_right">
                 <Image src={`../../${figma}`} />
-                Figma {id}
+                Figma
               </div>
             </div>
           </Col>
