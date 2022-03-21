@@ -7,31 +7,25 @@ import "./Index.scss";
 
 const Home = () => {
   const [data, setData] = useState(productList);
-
-  const [page, setPage] = useState(0);
+  const [element, setElement] = useState(12);
   const [searchTemplate, setSearchTemplate] = useState("");
   const [isLoading, setLoading] = useState(false);
+  const [isLoad, setIsLoad] = useState("Load more");
   const [visible, setVisible] = useState(false);
 
-  let rowsDisplay = 3;
   let dataCount = data.length;
-
-  const pageData = useMemo(() => {
-    return productList.slice(0, 3);
-  }, [page]);
-
+  let slice = data.slice(0, element);
+  console.log("slice", element, dataCount);
   const loadMore = (e) => {
     e.preventDefault();
     setLoading(true);
-    // setTimeout(() => {
-    //   setPage((prev) => prev + rowsDisplay);
-    // }, 5000);
-    setPage((prev) => prev + rowsDisplay);
-    setLoading(false);
-    console.log(page);
+    setIsLoad();
+    setTimeout(() => {
+      setElement(element + element);
+      setLoading(false);
+      setIsLoad("Load more");
+    }, 100);
   };
-
-  console.log(searchTemplate);
 
   const filterHandler = (cart) => {
     const result = productList.filter((curData) => {
@@ -95,7 +89,7 @@ const Home = () => {
             </Col>
             {productList && (
               <Products
-                data={data
+                data={slice
                   .filter((template) => {
                     if (searchTemplate == "") {
                       return template;
@@ -110,33 +104,20 @@ const Home = () => {
                   .map((item) => item)}
               />
             )}
-            {/* {productList && (
-              <Products
-                data={pageData
-                  .filter((template) => {
-                    if (searchTemplate == "") {
-                      return template;
-                    } else if (
-                      template.templateName
-                        .toLowerCase()
-                        .includes(searchTemplate.toLowerCase())
-                    ) {
-                      return template;
-                    }
-                  })
-                  .map((item) => item)}
-              />
-            )} */}
           </Row>
-          {/* <Row>
+          <Row>
             <Col lg={{ span: 4, offset: 4 }}>
-              {page !== dataCount ? (
+              {element.length <= element.length && "not found"}
+              {element < dataCount && (
                 <Button className="load-data" onClick={loadMore}>
-                  Load more
+                  {isLoading && (
+                    <div className="data-loader"> &bull;&bull;&bull;</div>
+                  )}
+                  {isLoad}
                 </Button>
-              ) : null}
+              )}
             </Col>
-          </Row> */}
+          </Row>
           <div
             className="go-to-top"
             onClick={scrollToTop}

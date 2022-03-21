@@ -9,8 +9,7 @@ import "./Description.scss";
 const Description = (props) => {
   let id = window.location.pathname.split("/")[2];
   console.log("url", id);
-  const { templateName, imageUrl, catogeries, image, description, figma } =
-    productList[id - 1];
+  const { templateName, imageUrl, description, figma } = productList[id - 1];
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -47,7 +46,7 @@ const Description = (props) => {
               />
               <div className="template-images_right">
                 <Image src={`../../${figma}`} />
-                Figma
+                Figma {id}
               </div>
             </div>
           </Col>
