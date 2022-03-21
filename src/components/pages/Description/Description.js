@@ -4,7 +4,6 @@ import { Container, Row, Col, Table, Breadcrumb, Image } from "react-bootstrap";
 import productList from "../../../Data/data";
 import { Link } from "react-router-dom";
 import "./Description.scss";
-// import { useParams } from "react-router-dom";
 
 const Description = (props) => {
   let id = window.location.pathname.split("/")[2];

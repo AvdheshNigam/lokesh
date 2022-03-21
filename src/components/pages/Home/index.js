@@ -1,5 +1,4 @@
 import React, { useState, useMemo } from "react";
-import { Link } from "react-router-dom";
 import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import Products from "../../common/Products";
 import productList from "../../../Data/data";
