@@ -43,6 +43,12 @@
     box-shadow: inset 0px 1px 0px rgba(63, 114, 175, 0.16);
   }
 }
-.custom-navbar .navbar-toggler:focus {
-  box-shadow: none !important;
+.custom-navbar .navbar-toggler {
+  border: 0;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../../../../public/images/menu-bar.svg) !important;
 }

@@ -66,7 +66,7 @@ const Home = () => {
             >
               <div className="filter-bar">
                 <div className="input">
-                  <img src="../images/search-icon.png" />
+                  <img src="../images/search.svg" />
                   <input
                     type="text"
                     placeholder="Search"

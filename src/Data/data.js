@@ -8,7 +8,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "2",
@@ -19,7 +19,7 @@ const productList = [
     catogeries: "Illustrations",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "3",
@@ -30,7 +30,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "4",
@@ -41,7 +41,7 @@ const productList = [
     catogeries: "Illustrations",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "5",
@@ -52,7 +52,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "6",
@@ -63,7 +63,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "7",
@@ -74,7 +74,7 @@ const productList = [
     catogeries: "Illustrations",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "8",
@@ -85,7 +85,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "9",
@@ -96,7 +96,7 @@ const productList = [
     catogeries: "Illustrations",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "10",
@@ -107,7 +107,7 @@ const productList = [
     catogeries: "Illustrations",
     tags: ["Illustrations", "Illustrations"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
 
   {
@@ -119,7 +119,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
   {
     id: "12",
@@ -130,7 +130,7 @@ const productList = [
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
     downloadLink: "https://www.google.com",
-    figma: "images/figma.png",
+    figma: "images/figma.svg",
   },
 ];
 
