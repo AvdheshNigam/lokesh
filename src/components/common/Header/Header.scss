@@ -31,7 +31,19 @@
     padding-left: 16px !important;
   }
 }
-
+@media (max-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    text-align: center !important;
+    &:hover {
+      font-weight: 500;
+      color: #3f72af;
+      background: #f1f4f9;
+    }
+  }
+  .custom-navbar .navbar-nav {
+    box-shadow: inset 0px 2px 0px rgba(63, 114, 175, 0.16);
+  }
+}
 .custom-navbar .navbar-toggler:focus {
   box-shadow: none !important;
 }
