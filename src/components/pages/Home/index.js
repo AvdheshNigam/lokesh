@@ -106,7 +106,7 @@ const Home = () => {
           </Row>
           <Row>
             <Col lg={{ span: 4, offset: 4 }}>
-              {element.length <= element.length && "not found"}
+              {/* {Number(element.length) <= Number(element.length) && "not found"} */}
               {element < dataCount && (
                 <Button className="load-data" onClick={loadMore}>
                   {isLoading && (
@@ -123,7 +123,7 @@ const Home = () => {
             style={{ display: visible ? "inline" : "none" }}
           >
             <img
-              src="images/back-arrow.png"
+              src="images/arrow.svg"
               style={{ transform: "rotate(90deg)" }}
             />
           </div>

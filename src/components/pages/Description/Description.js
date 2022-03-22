@@ -31,7 +31,7 @@ const Description = (props) => {
             style={{ marginBottom: "25px" }}
           >
             <Link to="/" className="back">
-              <img src="../images/back-arrow.png" /> <span>back</span>
+              <img src="../images/arrow.svg" /> <span>back</span>
             </Link>
           </Col>
           <Col xxl={7} xl={7} lg={7} md={12} sm={12}>
