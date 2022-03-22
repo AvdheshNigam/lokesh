@@ -73,15 +73,11 @@
   }
 }
 ::-webkit-input-placeholder {
-  /* Edge */
   color: rgba(63, 114, 175, 0.54);
 }
-
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
   color: rgba(63, 114, 175, 0.54);
 }
-
 ::placeholder {
   color: rgba(63, 114, 175, 0.54);
 }
