@@ -26,11 +26,23 @@ const Home = () => {
     }, 100);
   };
 
+  const addRemoveActive = (e) => {
+    let ul = document.querySelector(".filter-bar ul");
+    let li = document.querySelectorAll(".filter-bar ul li");
+    li.forEach((el) => {
+      el.addEventListener("click", () => {
+        ul.querySelector(".active").classList.remove("active");
+        el.classList.add("active");
+      });
+    });
+  };
+
   const filterHandler = (category) => {
     const result = productList.filter((curData) => {
       return curData.catogeries === category;
     });
     setData(result);
+    addRemoveActive();
   };
 
   const toggleVisible = () => {
