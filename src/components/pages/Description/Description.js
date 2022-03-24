@@ -1,18 +1,22 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet";
-import { Container, Row, Col, Table, Breadcrumb, Image } from "react-bootstrap";
+import { Container, Row, Col, Image } from "react-bootstrap";
 import productList from "../../../Data/data";
 import { Link } from "react-router-dom";
 import "./Description.scss";
 
 const Description = (props) => {
   let id = window.location.pathname.split("/")[2];
-  const { templateName, imageUrl, description, figma } = productList[id - 1];
+  const { templateName, imageUrl, description, figma, downloadLink } =
+    productList[id - 1];
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const figmaLinkHandler = () => {
+    window.open(downloadLink, "_blank");
+  };
   return (
     <section className="section-product-home">
       <Helmet>
@@ -53,7 +57,7 @@ const Description = (props) => {
                     You can download, use anywhere without giving credits. we
                     are happy with it. :)
                   </h4>
-                  <button>Get figma file</button>
+                  <button onClick={figmaLinkHandler}>Get figma file</button>
                 </div>
               </article>
             </section>

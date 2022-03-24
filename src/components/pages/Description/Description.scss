@@ -2,6 +2,8 @@
   position: relative;
   padding: 32px 56px;
   background: #fff;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
   @media (min-width: 992px) {
     margin-left: -25px;
@@ -50,6 +52,26 @@
       transition: all 0.2s ease-in-out;
       &:hover {
         background: #112d4e;
+      }
+    }
+    a {
+      display: block;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 1.2;
+      color: #fff;
+      background: #3f72af;
+      border-radius: 4px;
+      width: 100%;
+      font-style: normal;
+      padding: 16px 12px;
+      border: 0;
+      transition: all 0.2s ease-in-out;
+      text-decoration: none;
+      text-align: center;
+      &:hover {
+        background: #112d4e;
+        text-decoration: none;
       }
     }
   }

@@ -7,7 +7,7 @@ const productList = [
     imageUrl: "images/item-01.jpg",
     catogeries: "UI Designs",
     tags: ["Illustrations", "UI Designs"],
-    downloadLink: "https://www.google.com",
+    downloadLink: "https://adroitwebsolutions.com/",
     figma: "images/figma.svg",
   },
   {
