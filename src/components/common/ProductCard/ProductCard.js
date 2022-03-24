@@ -10,7 +10,9 @@ const ProductCard = ({ id, templateName, imageUrl, figma }) => {
         <Card.Img variant="top" src={imageUrl} />
       </Link>
       <Card.Body className="customCardBody">
-        <Card.Title className="custom-card-title">{templateName}</Card.Title>
+        <Card.Title className="custom-card-title">
+          <Link to={`template/${id}`}>{templateName}</Link>
+        </Card.Title>
         <Card.Text className="custom-card-text">
           <img src={figma} />
         </Card.Text>
