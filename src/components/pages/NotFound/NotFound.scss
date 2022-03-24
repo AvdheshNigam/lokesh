@@ -1,0 +1,16 @@
+.section-not-found {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  height: calc(100vh - 150px);
+  text-align: center;
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    margin: 30px 15px;
+  }
+  a {
+    color: #112d4e;
+  }
+}
